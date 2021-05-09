@@ -1,0 +1,41 @@
+body{
+  padding:50px 0px 0px 0px;
+  z-index:0;
+  
+ 
+}
+.container-fluid{
+   background-image: url(../assets/images/close-up-hand-writing-notebook-top-view.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+  
+}
+.row-content {
+  
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height:400px;
+  
+}
+
+
+footer{
+  background-color: #D1C4E9;
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
+}
+.unique-color {
+  background-color: #512DA8;
+  
+  
+}
+address{
+  font-size:80%;
+  margin:0px;
+  color:#0f0f0f;
+}
+.fa-user-circle{
+  align-self: right;
+}

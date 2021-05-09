@@ -1,0 +1,361 @@
+<div class="container">
+     
+     <div class="row">
+          
+          <div >
+               <div class="sidenav"  id="mySidenav">
+                    <a  id="add" routerLink="/addformateur" data-toggle="tooltip" data-placement="bottom" title="Ajouter formateur">
+                         add
+                    </a>
+                    <a id="home">
+                       home
+                    </a>
+               </div>>
+               
+                
+          </div>
+          <div class="col-10 align-self-center" >
+          <h2 id="titre" class="align-self-center">Les Formateurs</h2>
+          <table class="table table-light table-striped table-hover">
+               
+               <thead>
+                    <tr>
+                      
+                      <th scope="col">Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Adresse</th>
+                      <th scope="col">Domaine</th>
+                    </tr>
+               </thead>
+               <tbody class="formateurs">
+                    <tr *ngFor="let form of formateurs">
+                         <td><a id="nom" routerLink="/detailformateur/{{form.id}}">{{form.firstname}} {{form.familyname}}</a></td>
+                         <td>{{form.email}}</td>
+                         <td>{{form.adresse}}</td>
+                         <td>{{form.domaine}}</td>
+                         <td> <a routerLink="/editformateur/{{form.id}}"> Edit</a></td>
+                         <td><a (click)="delete(form)">Delete</a></td>
+                       </tr>
+               </tbody>
+          </table>
+          </div>
+          
+     </div>
+</div>
+<div></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-4">
+          <div class="card mb-3">
+            <img  src="../assets/images/formation.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a>Formation</a></h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="card mb-3">
+            <img src="../assets/images/business-training.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a routerLink="/formateurs"><h5 class="card-title" (click)="countformateurs()"> {{nbformateur}}Formateurs</h5></a>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="card mb-3">
+            <img src="../assets/images/part.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a><h5 class="card-title">Participants</h5></a>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      
+      <div class="formateur-menu">
+        <h2>Top Formateurs</h2> 
+        <table class="table table-light table-striped table-hover">
+          
+          <thead>
+               <tr>
+                 
+                 <th scope="col">Name</th>
+                 <th scope="col">Domaine</th>
+               </tr>
+          </thead>
+          <tbody class="formateurs">
+               <tr *ngFor="let form of formateurs">
+                    <td><a id="nom" routerLink="/detailformateur/{{form.id}}">{{form.firstname}} {{form.familyname}}</a></td>
+                    <td>{{form.domaine}}</td>
+                  </tr>
+          </tbody>
+     </table>
+        
+      </div>
+      
+    </div>
+</div>
+
+
+

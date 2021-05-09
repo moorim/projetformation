@@ -1,0 +1,100 @@
+
+<div class="main" id="wrapper">
+    
+      <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false">
+        <mdb-navbar-brand>
+          <a class="navbar-brand" href="">Espace Admin</a>
+      </mdb-navbar-brand>
+        <links>
+              <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" mdbWavesEffect routerLink="/dashboard"><span class="fa fa-home fa-lg"></span>  Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" mdbWavesEffect routerLink="/formateurs"><span class="fa fa-list fa-lg"></span> Formateurs</a></li>
+                    
+              </ul>
+              <ul class="navbar-nav ml-auto nav-flex-icons">
+                
+                <li class="nav-item">
+                  <a class="nav-link">
+                    <div class="btn-group " mdbDropdown>
+                      <span class="fa fa-user-o"  mdbDropdownToggle></span>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+                        <a class="dropdown-item" href="#">LOG OUT</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="divider dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+                  
+                      
+          </links>
+      </mdb-navbar>
+      
+      
+    
+  <div class="container-fluid" >
+  <div class="row row-content">
+      <div class="col">
+         <router-outlet></router-outlet>
+      </div>
+    </div>
+    <div class="row row-content">
+      <app-message></app-message>
+    </div>
+       
+
+  </div>
+</div>
+
+
+  
+
+<footer class="footer">
+  <div class="container">
+      <div class="row">             
+          <div  class="col-4 offset-1 col-sm-2"> 
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Menu</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div  class="col-7 col-sm-5"> 
+
+              <h5>Our Address</h5>
+              <address>
+            121, Clear Water Bay Road<br>
+            Clear Water Bay, Kowloon<br>
+            HONG KONG<br>
+            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                <i class="fa fa-envelope fa-lg"></i>: 
+                <a href="mailto:confusion@food.net">confusion@food.net</a>
+         </address>
+          </div>
+          <div class="col-12 col-sm-4 align-self-center">
+              <div class="text-center">
+                  <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus ga-lg"></i></a>
+                  <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                  <a class="btn btn-social-icon btn-linkedin "href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                  <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                  <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                  <a class="btn btn-social-icon " href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
+              </div>
+          </div>
+     </div>
+     <div class="row justify-content-center">             
+          <div class="col-auto">
+              <p>© Copyright 2021 </p>
+          </div>
+     </div>
+  </div>
+</footer>
+
+
+
